@@ -1,13 +1,19 @@
 This criterion is linked to a Learning OutcomeInterview Readiness
-#### Q2) What is exponential smoothing and why is it used in Time Series Forecasting?
+#### Q1) What does it mean to create a Docker image and why do we use Docker images?
 
-exponential smoothing is a technique for smoothing time series data using an exponential smoothing function. It is used in Time Series Forecasting because it allows us to emphasize current data over previous data instead of treating all data with equal weight.
+creating a Docker image means that we are creating a unit of software that packages all of our code for our ml app or other application. We use Docker Images because it allows for reproducibility for the program but also allows for users of different OS to run the code the same. Containers are also very secure and it is easy to maintain with tagging and images can we rebuilt easily with Dockerfiles.
 
-#### Q3) What is stationarity? What is seasonality? Why Is Stationarity Important in Time Series Forecasting
+#### Q2) Please explain what is the difference from a Container vs a Virtual Machine?
 
-Stationary means that a time series whose properties do not depend on the time at which the series is observed, it is important in Time Series forecasting because it is a core assumptions for a lot of model techniques to hold valid. Seasonality are repeating regular patterns of fluctuations in our data.
+Containers run fast, it is often a different OS that is being installed to your machine, and inside the VM we would still need to maintain enviornments based on different projects. With Containers we would be able to isolate each containerized project and can run code on different objects.
 
-### Q4) How is seasonality different from cyclicality? Fill in the blanks:
+### Q3) What are 5 examples of container orchestration tools (please list tools):
+      1. Kubernetes 
+      2. Openshift
+      3. Docker Swarm 
+      4. Mesos 
+      5. Azure AKS Service
+      
+### Q4) How does a Docker image differ from a Docker container?:
 
-Seasonality is a regular repeating pattern of up / down flucuations, and cyclicality has ups and down but aren't as regular as seasonality. Cyclicality is usually longer-term patterns.
-seasonality is predictable whereas cyclicality is not.
+A Docker images contains everything that we would need to run our program and a docker container is an enviornment where we run the docker image.
